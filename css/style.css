@@ -137,6 +137,12 @@ ul {
     padding     : 15px 30px;
     }
 
+.btn-xs {
+    font-weight : 700;
+    font-size   : 12px;
+    padding     : 8px 16px;
+    }
+
 /*btn-primary*/
 .btn-primary {
     background-color : #FFC107;
@@ -150,17 +156,17 @@ ul {
 
 /*btn-default*/
 .btn-default {
-    color            : #2a54f5;
+    color            : #0775ac;
     background-color : transparent;
-    border           : 2px solid #2a54f5;
+    border           : 2px solid #0775ac;
     }
 
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active:focus {
-    background   : #2a54f5;
+    background   : #0775ac;
     color        : #ffffff;
-    border-color : #2a54f5;
+    border-color : #0775ac;
     }
 
 button:focus,
@@ -309,7 +315,8 @@ button:focus,
     }
 
 .header .btn {
-    margin-top : 40px;
+    margin-top : 15px;
+	margin-bottom: 30px;
     }
 
 @media (max-width : 768px) {
@@ -351,16 +358,35 @@ button:focus,
     margin  : 0 2px;
     }
 
-.social-icon li a {
+.social-icon a {
     display       : block;
-    font-size     : 12px;
+    font-size     : 14px;
     color         : #333333;
-    width         : 34px;
-    height        : 34px;
-    line-height   : 33px;
+    width         : 44px;
+    height        : 44px;
+    line-height   : 43px;
     text-align    : center;
     border-radius : 2px;
     border        : 2px solid #eeeeee;
+    }
+
+.social-icon li .download:hover {
+    border-color : #cccccc;
+	color         : #333333;
+    }
+
+.social-icon li .download{
+    display       : inline-block;
+    font-size     : 16px;
+    color         : #444444;
+	width         : auto;
+    height        : 44px;
+    line-height   : 43px;
+    text-align    : center;
+    border-radius : 2px;
+	padding: 0px 15px;
+    border        : 2px solid #eeeeee;
+	font-weight: 500;
     }
 
 .social-icon li a:hover {
@@ -550,6 +576,10 @@ button:focus,
     .footer {
         padding : 10px 20px;
         }
+	.download
+	{
+		margin-top: 20px;
+	}
     }
 
 /* ---------------------------------------------- /*
