@@ -318,7 +318,12 @@ button:focus,
     margin-top : 15px;
 	margin-bottom: 30px;
     }
-
+@media (max-width : 1199px) {
+.download
+	{
+		margin-top: 20px;
+	}
+}
 @media (max-width : 768px) {
     .header {
         padding       : 0;

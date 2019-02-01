@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jasveen Bhasin - Art Gallery</title>
+	<link href="favicon.png" rel=icon>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
+<style>
+body {
+    font-family : 'Hind', sans-serif;
+    font-size   : 15px;
+    line-height : 1.8em;
+    color       : #3d3d50;
+    font-weight : 300;
+	background  : url("img/pattern-bg-gallery.png") fixed;
+    }
+.header h1
+	{
+		text-align: center;
+		font-family: cursive;
+		font-weight: 700;
+		text-shadow: 0 0 18px rgba(0,0,0,0.3)
+	}
+.thumbnails a
+	{
+		float:left;
+		width: 25%;
+		padding: 10px 5px;
+		display: block;
+		box-sizing: border-box;
+	}
+.thumbnails img
+	{
+		max-width: 100%;
+		display: block;
+		height: auto;
+		transition: all 0.4s;
+		-webkit-transition: all 0.6s;
+		border: 8px solid white;
+		border-radius: 10px;
+	}
+//.thumbnails:hover img
+//	{	opacity: 0.6;
+//		transform: scale(0.92);
+//	}
+.thumbnails img:hover
+	{
+		transform: scale(0.92);
+		box-shadow: 0 0 7px rgba(0,0,0,0.5);
+		opacity: 1;
+	}
+.thumbnails
+	{
+		margin-top: 10px;
+	}
+.container
+	{
+		width: 90%;
+	}
+@media screen and (max-width:984px)
+	{
+	.thumbnails a
+		{
+			width: 33.33%;
+		}
+	}
+@media screen and (max-width:768px)
+	{
+	.thumbnails a
+		{
+			width: 50%;
+		}
+	}
+@media screen and (max-width:584px)
+	{
+	.thumbnails a
+		{
+			width: 100%;
+		}
+	}
+	</style>
+</head>
+<body id="page-top" data-spy="scroll">
+<div class="container">
+	<div class="header">
+		<h1>Welcome to my Art Gallery</h1>
+	</div>
+  <div class="row">
+	  <div class="col col-md-12 thumbnails">
+    <a data-lightbox="gallery" target="_blank" href="img/2_Original.jpg">
+      <img src="img/2.jpg">
+    </a>
+		  <a data-lightbox="gallery" target="_blank" href="img/5_Original.jpg">
+      <img src="img/5.jpg">
+    </a>
+		  <a data-lightbox="gallery" target="_blank" href="img/6_Original.jpg">
+      <img src="img/6.jpg">
+    </a>
+		  <a data-lightbox="gallery" target="_blank" href="img/8_Original.jpg">
+      <img src="img/8.jpg">
+    </a>
+		  <a data-lightbox="gallery" target="_blank" href="img/1_Original.jpg">
+      <img src="img/1.jpg">
+    </a>
+		  <a data-lightbox="gallery" target="_blank" href="img/3_Original.jpg">
+      <img src="img/3.jpg">
+    </a>
+		  <a data-lightbox="gallery" target="_blank" href="img/4_Original.jpg">
+      <img src="img/4.jpg">
+    </a>
+		  <div style="clear: both"></div>
+	  </div>
+	</div>
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	</body>
+</html>
